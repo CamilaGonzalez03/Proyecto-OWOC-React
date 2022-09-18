@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.titulo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:cursive;
+  font-size: 60px;
+  font-weight: bold;
+  color: #520556;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.navbar{
+  height: 6rem;
+  background-color: #CA431D;
+  color: #520556;
+  font-family:cursive
+}
+
+.p-2{
+  color:white;
+  background-color:#520556;
+}
+
+.menu{
+  font-size: 20px;
+  font-weight: 500;
+}
