@@ -15,8 +15,8 @@ function App() {
         <h1 className='titulo' >OWOC Almacen Natural</h1>
         <Routes>
           <Route path={'/Inicio'} element={<ItemListContainerInicio/>} />
-          <Route path={'/Tienda'} element={<ItemListContainer/>} />
-          <Route path={'/Tienda/item/:id'} element={<ItemDetailContainer/>} />
+          <Route path={'/Productos'} element={<ItemListContainer/>} />
+          <Route path={'/Productos/item/:id'} element={<ItemDetailContainer/>} />
         </Routes>
       </BrowserRouter>
     </>
