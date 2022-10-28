@@ -19,7 +19,7 @@ export const ItemDetailCount = ({initial, stock, onAdd}) => {
 
 
 	return (
-		<div className="card-body flex flex-col">
+		<div className="mt-5 flex flex-col">
 			<div>
 				<button className='btn btn-outline' disabled={count <= 1} onClick={decrease}>-</button>
 				<span className="p-3">{count}</span>

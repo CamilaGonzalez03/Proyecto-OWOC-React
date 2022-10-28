@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ItemListCard from './ItemListCard'
 import {products} from './Products'
 
-const ItemListContainer = ({ texto }) => {
+const ItemListContainer = () => {
 
     const styles = {
         color: '#CA431D',

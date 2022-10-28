@@ -6,9 +6,7 @@ import Navbar from './Components/Navbar';
 import ItemContainerInicio from './Components/ItemContainerInicio';
 import ItemListContainer from './Components/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer'
-//import ItemCart from './Components/ItemCart';
 import Cart from './Components/Cart';
-//import CartWidget from './Components/CartWidget';
 
 
 function App() {
