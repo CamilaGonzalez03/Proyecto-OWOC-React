@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from "../Recursos/logo owoc200.png"
+import Logo from "../Recursos/Logo OWOC header.jpg";
 import CartWidget from './CartWidget';
 
 const Navbar = () => {
@@ -17,12 +17,10 @@ return (
             <ul className="menu menu-horizontal p-0">
                 <li><Link to='/Inicio'>Inicio</Link></li>
                 <li><Link to='/Productos'>Productos</Link></li>
-                <li><Link to='/'>Promociones</Link></li>
-                <li><Link to='/'>Nosotras</Link></li>
-                <li><Link to='/'>Contacto</Link></li>
+                <li><Link to='/Carrito'><CartWidget/></Link></li>
             </ul>
         </div>
-        <CartWidget/>
+        
     </div>
 )
 }

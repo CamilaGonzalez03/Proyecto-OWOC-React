@@ -1,7 +1,7 @@
 import React from 'react'
-import almendras from '../Recursos/almendra400.png'
+import almendras from '../Recursos/Almendras 400.png'
 
-const ItemListContainerInicio = ( ) => {
+const ItemContainerInicio = ( ) => {
     const styles = {
         color: '#CA431D',
         fontFamily: 'cursive',
@@ -11,11 +11,11 @@ const ItemListContainerInicio = ( ) => {
     }
     
     return (
-        <div style={styles} class="flex flex-nowrap justify-center justify-items-center items-center">
-            <img class="rounded-full m-10" src={almendras} alt="almendras"/>
+        <div style={styles} className="flex flex-nowrap justify-center justify-items-center items-center">
+            <img className="rounded-full m-10" src={almendras} alt="almendras"/>
             <h2>Encontrá todo lo que buscas. Venta de frutos secos, granolas, semillas y más!</h2>
         </div>
     )
 }
 
-export default ItemListContainerInicio
+export default ItemContainerInicio

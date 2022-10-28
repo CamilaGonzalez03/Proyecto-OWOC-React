@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const ItemCardContainer = ({id, img, name}) => {
+const ItemListCard = ({id, img, name}) => {
+
   return (
     <>
     <Link to ={`/Productos/item/${id}`}>
@@ -11,7 +12,7 @@ const ItemCardContainer = ({id, img, name}) => {
             <img src={img} alt={name} className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title" class="text-purple-700 text-xl">{name}</h2>
+            <h2 className="card-title text-purple-700 text-xl">{name}</h2>
           </div>
         </div>
     </Link>
@@ -19,4 +20,4 @@ const ItemCardContainer = ({id, img, name}) => {
   )
 }
 
-export default ItemCardContainer
+export default ItemListCard
