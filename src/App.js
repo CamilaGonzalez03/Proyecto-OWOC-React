@@ -7,6 +7,7 @@ import ItemContainerInicio from './Components/ItemContainerInicio';
 import ItemListContainer from './Components/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer'
 import Cart from './Components/Cart';
+import ListContainer from './Components/frebase-example/ListContainer';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route path={'/Productos'} element={<ItemListContainer/>} />
               <Route path={'/Productos/item/:id'} element={<ItemDetailContainer/>} />
               <Route path={'/Carrito'} element={<Cart/>}/>
+              <Route path={'/firebase'} element={<ListContainer/>}/>
             </Routes>
         </BrowserRouter>
       </CartProvider>
