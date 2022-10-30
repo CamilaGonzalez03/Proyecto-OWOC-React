@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {collection, doc, getDoc, getDocs, getFirestore} from 'firebase/firestore'
+import {collection, doc, getDoc, getDocs, getFirestore, query, where} from 'firebase/firestore'
 
 const ListContainer = () => {
 
@@ -29,6 +29,17 @@ const getItems = () => {
     })
 }
 
+//COLECCION CON FILTRO
+const getItemsPricierThan = ( price ) => {
+    const db = getFirestore()
+    const itemsRef = collection(db, 'productos')
+    const q = query(itemsRef, where('price', '>', price) )
+    getDocs( q ).then( snapshot => {
+        const data = snapshot.docs.map( e => ({id: e.id, ...e.data()}) )
+        console.table(data);
+        setItems(data)
+    })
+}
 
     return (
         <div className='ml-10'>
