@@ -74,11 +74,11 @@ const Cart = () => {
       {
         cart.map(product => <ItemCart key={product.id} product={product} />) 
       }
-      <div className='text-purple-700 text-xl ml-10'>
+      <div className='text-purple-700 text-xl font-bold ml-10'>
         Total: ${totalPrice()}
       </div>
       <Form setUser={setUser}/>
-      <Link to='/inicio'><button className='btn bg-orange-600 ml-10 mt-5' onClick={newOrder}>Emitir compra</button></Link>
+      <Link to='/inicio'><button className='btn bg-orange-600 ml-10 mt-5' onClick={newOrder}>COMPRAR</button></Link>
     </>
   )
 }
